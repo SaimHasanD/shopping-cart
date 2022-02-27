@@ -9,6 +9,12 @@ function handleProductChange(product, isIncrease){
         totalNumber = number - 1;
     }
     inputNumber.value = totalNumber;
-    const totalPrice = totalNumber * 59;
+    let totalPrice = totalNumber;
+    if (product == 'phone') {
+        totalPrice = totalNumber * 1200;
+    }
+    if (product == 'case') {
+        totalPrice = totalNumber * 59;
+    }
     document.getElementById(product + "Price").innerText = '$'+totalPrice;
 }
