@@ -1,3 +1,4 @@
+// phone input , case input, plus button, minus button
 function handleProductChange(product, isIncrease) {
     const inputNumber = document.getElementById(product + "Input");
     const number = parseFloat(inputNumber.value);
@@ -17,13 +18,15 @@ function handleProductChange(product, isIncrease) {
         totalPrice = totalNumber * 59;
     }
     document.getElementById(product + "Price").innerText = '$' + totalPrice;
+    // sub total cost add
     subTotal();
 }
 
+// sub total
 function subTotal() {
     const phoneInput = document.getElementById('phoneInput');
     const totalPhone = parseInt(phoneInput.value);
-    
+
     const caseInput = document.getElementById('caseInput');
     const totalCase = parseInt(caseInput.value);
 
