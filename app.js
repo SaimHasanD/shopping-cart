@@ -19,11 +19,11 @@ function handleProductChange(product, isIncrease) {
     }
     document.getElementById(product + 'Price').innerText = '$' + totalPrice;
     // sub total cost add
-    subTotal();
+    calculateTotal();
 }
 
 // sub total
-function subTotal() {
+function calculateTotal() {
     const totalPhone = getInputValue('phone');
     const totalCase = getInputValue('case');
 
