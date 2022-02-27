@@ -40,3 +40,43 @@ document.getElementById("minusButtonTwo").addEventListener("click", function(){
     // const number = parseFloat(inputNumber);
     // const totalNumber = number + 1;
     // document.getElementById("firstInput").value = totalNumber;
+
+
+    //from app.js
+    // // case plus
+// function handleProductChanges(){
+//     const inputNumber = document.getElementById("caseInput");
+//     const number = parseFloat(inputNumber.value);
+//     const totalNumber = number + 1;
+//     inputNumber.value = totalNumber;
+//     const totalPrice = totalNumber * 59;
+//     document.getElementById("casePrice").innerText = '$'+totalPrice;
+// }
+
+// // case minus
+// function handleProductChange(){
+//     const inputNumber = document.getElementById("caseInput");
+//     const number = parseFloat(inputNumber.value);
+//     const totalNumber = number - 1;
+//     inputNumber.value = totalNumber;
+//     const totalPrice = totalNumber * 59;
+//     document.getElementById("casePrice").innerText = '$'+totalPrice;
+// }
+
+// document.getElementById("casePlus").addEventListener("click", function () {
+//     const inputNumber = document.getElementById("caseInput");
+//     const number = parseFloat(inputNumber.value);
+//     const totalNumber = number + 1;
+//     inputNumber.value = totalNumber;
+//     const totalPrice = totalNumber * 59;
+//     document.getElementById("casePrice").innerText = '$'+totalPrice;
+// });
+
+// document.getElementById("caseMinus").addEventListener("click", function () {
+//     const inputNumber = document.getElementById("caseInput");
+//     const number = parseFloat(inputNumber.value);
+//     const totalNumber = number - 1;
+//     inputNumber.value = totalNumber;
+//     const totalPrice = totalNumber * 59;
+//     document.getElementById("casePrice").innerText = '$'+totalPrice;
+// });
