@@ -30,12 +30,10 @@ function subTotal() {
     const cost = totalPhone * 1200 + totalCase * 59;
     document.getElementById('subCost').innerText = '$' + cost;
 
-    const tax = cost * 0.1;
-    const totalTax = Math.round(tax);
+    const totalTax = Math.round(cost * 0.1); // float to int
     document.getElementById('taxAmount').innerText = '$' + totalTax;
 
-    const allCost = cost + tax ;
-    const totalCost = Math.round(allCost);
+    const totalCost = cost + totalTax ;
     document.getElementById('totalCost').innerText = '$' + totalCost;
 }
 
