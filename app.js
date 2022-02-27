@@ -1,16 +1,15 @@
 // phone input , case input, plus button, minus button
 function handleProductChange(product, isIncrease) {
-    const inputNumber = document.getElementById(product + "Input");
-    const number = parseFloat(inputNumber.value);
-    // const number = getInputValue(product);
-    let totalNumber = number;
+    const productInput = document.getElementById(product + 'Input');
+    const totalProduct = getInputValue(product);
+    let totalNumber = totalProduct;
     if (isIncrease == true) {
-        totalNumber = number + 1;
+        totalNumber = totalProduct + 1;
     }
-    if (isIncrease == false && number > 0) {
-        totalNumber = number - 1;
+    if (isIncrease == false && totalProduct > 0) {
+        totalNumber = totalProduct - 1;
     }
-    inputNumber.value = totalNumber;
+    productInput.value = totalNumber;
     let totalPrice = totalNumber;
     if (product == 'phone') {
         totalPrice = totalNumber * 1200;
@@ -28,8 +27,16 @@ function subTotal() {
     const totalPhone = getInputValue('phone');
     const totalCase = getInputValue('case');
 
-    const subCost = totalPhone * 1200 + totalCase * 59;
-    document.getElementById('subCost').innerText = '$' + subCost;
+    const cost = totalPhone * 1200 + totalCase * 59;
+    document.getElementById('subCost').innerText = '$' + cost;
+
+    const tax = cost * 0.1;
+    const totalTax = Math.round(tax);
+    document.getElementById('taxAmount').innerText = '$' + totalTax;
+
+    const allCost = cost + tax ;
+    const totalCost = Math.round(allCost);
+    document.getElementById('totalCost').innerText = '$' + totalCost;
 }
 
 // Product Input Value
