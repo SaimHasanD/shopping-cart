@@ -111,4 +111,4 @@ document.getElementById("minusButtonTwo").addEventListener("click", function(){
 //     inputNumber.value = totalNumber;
 //     const totalPrice = totalNumber * 59;
 //     document.getElementById("casePrice").innerText = '$'+totalPrice;
-// }'case', 
+// }
